@@ -19,24 +19,25 @@ def opcao():
     elif opcao == 4:
         return divisao()
 
-def soma():
+def numero1enumero2():
     n1 = int(input('Digite um numero: '))
     n2 = int(input('Digite outro numero'))
+    return n1,n2
+
+def soma():
+    n1,n2 = numero1enumero2()
     return n1+n2
 
 def subtracao():
-     n1 = int(input('Digite um numero: '))
-     n2 = int(input('Digite outro numero'))
+     n1,n2 = numero1enumero2()
      return n1-n2
     
 def multplicacao():
-     n1 = int(input('Digite um numero: '))
-     n2 = int(input('Digite outro numero'))
+     n1,n2 = numero1enumero2()
      return n1*n2
 
 def divisao():
-     n1 = int(input('Digite um numero: '))
-     n2 = int(input('Digite outro numero'))
+     n1,n2 = numero1enumero2()
      return n1/n2
 
 
